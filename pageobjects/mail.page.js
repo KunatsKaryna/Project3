@@ -4,8 +4,8 @@ const selectors = {
   whomField: '//*[@id="message-to-field"]',
   themeField: '//input[@data-test-id="compose-subject"]',
   bodyField: '//*[@id="editor-container"]/div[1]',
-
   };
+
 class MailPage extends Page {  
   get writeButton() { return $(selectors.writeButton); }
 
@@ -14,6 +14,6 @@ class MailPage extends Page {
   get themeField() { return $(selectors.themeField); }
    
   get bodyField() { return $(selectors.bodyField); }
-
   }
-  module.exports = new MailPage();
+
+module.exports = new MailPage();

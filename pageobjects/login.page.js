@@ -18,5 +18,5 @@ class LoginPage extends Page {
 
   get mailButton() { return $(selectors.mailButton); }
   }
-  
-  module.exports = new LoginPage();
+
+module.exports = new LoginPage();
